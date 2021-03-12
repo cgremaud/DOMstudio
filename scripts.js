@@ -8,26 +8,18 @@ window.addEventListener("load", (event) => {
     let landButton = document.getElementById("landing")
     let shuttleBackground = document.getElementById("shuttleBackground")
     let rocket = document.getElementById("rocket")
-    rocket.style.bottom = "0px"
-    rocket.style.left = "0px"
-    rocket.style.position = "absolute"
     let upButton = document.getElementById("upButton")
     let downButton = document.getElementById("downButton")
     let leftButton = document.getElementById("leftButton")
     let rightButton = document.getElementById("rightButton")
 
-    function addTen(num){
-        return num + 10
-    }
-
-    function minusTen(num){
-        return num - 10
-    }
+    rocket.style.bottom = "0px"
+    rocket.style.left = "0px"
+    rocket.style.position = "absolute"
 
     upButton.addEventListener("click", () => {
         let movement = parseInt(rocket.style.bottom) + 10 + "px"
-        rocket.style.bottom = movement
-        // rocket.style.position= 'relative'; 
+        rocket.style.bottom = movement 
         spaceShuttleHeight.innerHTML = parseInt(spaceShuttleHeight.innerHTML) + 10000
     })
 
